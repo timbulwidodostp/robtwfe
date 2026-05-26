@@ -1,0 +1,28 @@
+.-
+help for ^robtwfe^
+.-
+
+Combine robust regression estimation (Huber M) with two-way fixed effects.
+----------------------
+
+ ^robtwfe^
+ 
+Description
+-----------
+
+^robtwfe^ Combine robust regression estimation (Huber M) with two-way fixed effects.
+     
+^Note:^ Requires robtwfe.ado by Olah Data Semarang
+
+Examples
+--------
+
+ . ^qui reghdfe robtwfe robtwfe_1 robtwfe_2 robtwfe_3, absorb(ivar tvar)^
+ . ^robtwfe m robtwfe robtwfe_1 robtwfe_2 robtwfe_3, ivar(ivar) tvar(tvar) cluster(cluster) eff(95)^
+
+Author
+------
+
+      Timbul Widodo
+      Olah Data Semarang
+      https://www.youtube.com/@amalsedekah
